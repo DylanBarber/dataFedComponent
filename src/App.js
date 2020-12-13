@@ -1,9 +1,10 @@
 import './App.css';
+import GitHubProjects from './components/Projects/Projects';
 
 function App() {
   return (
     <div className="App">
-      <h1>Start Building!</h1>
+      <GitHubProjects />
     </div>
   );
 }
