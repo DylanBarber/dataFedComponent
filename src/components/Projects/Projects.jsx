@@ -14,13 +14,11 @@ class GitHubProjects extends Component {
     }
 
     async componentDidMount() {
-
         const responseData = await axios.get('https://api.github.com/users/dylanbarber/repos');
         this.setState({ repoData: responseData.data });
     }
 
     render() {
-
         const projectCards = this.state.repoData.map((repo, index) => {
 
             if (repo.description === null) {
